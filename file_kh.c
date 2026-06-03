@@ -1,3 +1,4 @@
+// 运行该客户端.c文件生成的可执行文件，并可以将所处文件夹里的文件上传到服务端，也可以从服务端下载文件。
 #include <sys/socket.h>
 #include <sys/types.h>
 #include <netinet/in.h>

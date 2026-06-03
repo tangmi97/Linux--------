@@ -1,3 +1,4 @@
+// 运行该服务端.c文件生成的可执行文件，可以接受客户端上传的文件，并可以将所处文件夹里的文件提供给客户端进行下载。（支持多客户端连接）
 #include <sys/socket.h>
 #include <sys/types.h>
 #include <netinet/in.h>
@@ -89,6 +90,7 @@ int main(int argc,char *argv)
     err("bind",temp_bind);
     int temp_listen=listen(sockfd,1024);
     err("listen",temp_listen);
+    printf("===== 多线程文件传输服务器 =====\n");
     printf("等待连接中～\n");
     while(1)
     {
